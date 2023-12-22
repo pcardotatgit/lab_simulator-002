@@ -172,6 +172,9 @@ For doing so, click on the **[Settings]** button in the top menu and enter the c
 - **CTR client password**
 - **Bot Token**
 - **Webex Room ID**
+- Select your region
+
+Click on the **[Save Changes]** button.
 
 That means that as pre requisists :
 
