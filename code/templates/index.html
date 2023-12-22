@@ -1,0 +1,15 @@
+<html>
+<body>
+<title>Page Refresh every 5 Seconds</title>
+<h2 style="text-align: left">Auto Refresh the Page</h2>
+<script>
+let timer=1;
+setInterval(() => {
+    document.querySelector('h2').innerText= timer;
+    timer++;
+    if(timer >5)
+    location.reload();                            
+}, 1000);
+</script>
+</body>
+</html>

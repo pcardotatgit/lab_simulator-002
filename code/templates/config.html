@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>Settings</title>
+    </head>
+    
+<body>
+<center><h1>Settings</h1><form action="clean_config">
+	<input type="submit" value="Reset Configuration"/>
+	</form></center><hr>
+<div>
+    <form action="update_config" method="POST">
+	<center><input type="submit" value="Save Changes"/></center><br>
+    <table><tbody>  
+    Region ( Current region is : {{conf[2]}} ) :  <select name='region'> 
+    <option value='{{conf[2]}}' selected>{{conf[2]}} : is current</option> 
+    <option value='EU'>EU</option>    
+    <option value='US'>US</option>
+    <option value='APJC'>APJC</option>
+    </select>
+    <tr><td> CTR Client ID : </td><td><textarea name="client_id" rows="1" cols="60"/>{{conf[0]}}</textarea></td></tr>
+    <tr><td> CTR Client password : </td><td><textarea name="client_password" rows="1" cols="60" />{{conf[1]}}</textarea></td></tr>
+    <tr><td> Webhook URL : </td><td><textarea name="webhook_url" rows="1" cols="60" />{{conf[3]}}</textarea></td></tr>
+    <tr><td> Bot Token : </td><td><textarea name="bot_token" rows="1" cols="60" />{{conf[5]}}</textarea></td></tr>
+    <tr><td> Webex Room ID : </td><td><textarea name="roomID" rows="1" cols="60" />{{conf[4]}}</textarea></td></tr>    
+	</form>
+    </td></tr></tbody></table>  
+</div>
+</body>
+</html>

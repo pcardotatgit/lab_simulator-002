@@ -1,0 +1,7 @@
+urllib3==1.26.15
+requests
+pyopenssl
+flask
+flask_request_params
+crayons
+webex_bot

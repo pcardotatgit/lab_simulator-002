@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="language" content="fr-fr" />    
+    <link rel="shortcut icon" href="cisco.jpg" type="image/x-icon" />     
+    <link rel="stylesheet" type="text/css" href="main.css" />  
+<title>Lab Portal</title>
+    <script type="text/javascript" src="/static/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/jquery/jquery.maphilight.js"></script>
+	<script type="text/javascript">$(function() {
+		$('.map').maphilight({fade: false});
+	});</script>
+   <script language='javascript'>
+    function popup_window( url, id, width, height )
+    {
+       //extract the url parameters if any, and pass them to the called html
+       var tempvar=document.location.toString(); // fetch the URL string
+       var passedparams = tempvar.lastIndexOf("?");
+       if(passedparams > -1)
+          url += tempvar.substring(passedparams);
+      popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=no,statusbar=no,menubar=no,resizable=no,width=' + width + ',height=' + height + '' );
+      popup.focus();
+    }    
+  </script>   
+    </head>
+    
+<body>
+<table><tbody>
+<tr><td><form action="javascript:popup_window('config', 'configuration', 700, 500);">
+	<input type="submit" value="Settings"/>
+	</form></td><td><form action="javascript:popup_window('check', 'Cisco_XDR_Check', 700, 500);">
+	<input type="submit" value="Check Cisco XDR"/>
+	</form></td>
+    <td><form action="start_bot">
+	<input type="submit" value="Start Webex Bot"/>
+	</form></td>      
+    <td><form action="javascript:popup_window('check_alert_room', 'check_alert_room', 700, 500);">
+	<input type="submit" value="Check Alert Room"/>
+	</form></td>
+    <td><form action="javascript:popup_window('https://xdr.eu.security.cisco.com/', 'Cisco_XDR', 700, 500);">
+	<input type="submit" value="Open Cisco XDR Console"/>
+	</form></td>  
+    <td><form action="javascript:popup_window('https://developer.webex.com/', 'Webex_developer', 700, 500);">
+	<input type="submit" value="Open Webex Developer "/>
+	</form></td> 
+    <td><form action="javascript:popup_window('cleanup', 'Clean UP XDR Incident', 700, 500);">
+	<input type="submit" value="Clean Up XDR Incident"/>
+	</form></td>     
+    <td><form action="stop">
+	<input type="submit" value="Close App "/>
+	</form></td>     
+    </tr>
+</tbody></table>
+<hr>
+<div class="container" id="page">				
+	<div id="content">
+<form id="yw0">       
+        </div>
+</form>
+            
+<div align="center">
+            <p style="align:center"><img class="map" align="center" src="/static/lab_network.jpg" usemap="#map"/></p>
+<map name="map">	
+    <AREA SHAPE=RECT COORDS="34,90,90,138" HREF="javascript:popup_window('hacker', 'hacker_console', 600, 400);">
+    <AREA SHAPE=RECT COORDS="792,231,824,278" HREF="javascript:popup_window('/victim_info', 'victim_info', 600, 400);">    
+</map>
+            </div>
+</div>
+<hr>
+<script>
+let timer=1;
+setInterval(() => {
+    timer++;
+    if(timer >5)
+    location.reload("http://10.0.0.3:4000");                            
+}, 1000);
+</script>
+</body>
+</html>
