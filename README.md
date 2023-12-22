@@ -8,11 +8,11 @@ The simulator exposes a Web GUI that is a network diagram you can interact with.
 
 ![](assets/img/0.png)
 
-The web GUI simulates an endpoint infection which creates incidents and sightings into your Cisco XDR Tenant. Exactly like what happen with real infections.
+The web GUI simulates an endpoint infection which creates incidents and sightings into your Cisco XDR Tenant. Exactly like what happen in real life during real infections.
 
-We simulate an infection but we create a real Cisco XDR Incident. And we do this this way because we don't want to use real attacks or malwares for the demo.
+We simulate the infection, but we create a real Cisco XDR Incident. We do this because we don't want to use real attacks or real malwares for the demo. But within XDR the resultis the same.
 
-The demo rely on a Webex Bot alerting system which will receive Webex Alert Cards send by an XDR Incident Workflow when Incident will be created by this XDR demo.  The goal is to allow the security operator to select observables to block into the alert formular by in Webex. And add them into XDR Feed by clinking into the displayed blocked button.
+The demo relies on a Webex Bot alerting system which will receive Webex Alert Cards sent by an XDR Incident Workflow which will be automatically triggered when an Incident will be created by this XDR demo.  The goal is to allow the security operator to select observables to block into the alert formular displayed in Webex. And add them into XDR Feed by clinking into the displayed "block" button.
 
 In order to manage this specific service, the simulator includes a Websocket Webex Webhook management Features you must start once the flask application is started.
 
@@ -152,7 +152,7 @@ This web server listens to port 4000. At anytime you can open the index page at 
 
 You can **stop the flask application** thanks to the [ Close App ] button in the web GUI, or by typing Ctrl+C into the application console.
 
-## Start the simulator when python package and modules are already installed :
+## How to Start the simulator when python package and modules are already installed :
 
 Open a CMD console into the code folder and type :
 
