@@ -161,3 +161,29 @@ Type the letter **a** to start the python virtual environment
 And then the letter **b** to start the simulator  
 
 Ready to go !
+
+## What to do when the Flask Application is started
+
+The first time ou run the application you must complete the application setup by configuring some initiamisation parameters.
+
+For doing so, click on the **[Settings]** button in the top menu and enter the correct values for :
+
+- **CTR client ID**
+- **CTR client password**
+- **Bot Token**
+- **Webex Room ID**
+
+That means that as pre requisists :
+
+First you must have created your XDR API Client.
+
+Second you must have created a Webex Bot and you hust have open a conversation with it. You can refer to this article [
+webex_for_xdr_part-5_websocket ](https://github.com/pcardotatgit/webex_for_xdr_part-5_websocket).
+
+For information the **Webex Room ID** can be seen into the application console when you send anything into the Webex Room you opened with the Bot.
+
+For technical reasons the Webex Bot can't be started automatically when you start the application. For this reason you must start it manually everytime you start the application by clicking on the **[Start Webex Bot]** button. 
+
+Then you can check that it is started into the application console thanks to the message : **the message : Websocket Opened**.
+Then you can type anything into the room you openned with the bot. You are suppose to see that the text you send was received by the bot logic into the application console ( the room ID is one of the parameter we see in the console )
+
