@@ -8,7 +8,7 @@ Both list are then passed to the [**XDR_ALERT_CARD_WITH_TARGETS_AND_OBSERVABLES_
 
 The result is that the Advanced Alert Webex Card described into the [**XDR_ALERT_CARD_WITH_TARGETS_AND_OBSERVABLES_TO_WEBEX_ROOM**](https://github.com/pcardotatgit/webex_for_xdr_part-6_XDR_send_alert_workflow) article, is sent into the Alert Bot Webex Room with targets and observables in selection list into the formular. Then the Security Operator can select objects to isolate and block.
 
-FOr the demo, you must install this workflow into your XDR tenant.
+For the demo, you must import this workflow into your XDR workflow library.
 
 And you must assign the correct value to the following global XDR variables :
 
