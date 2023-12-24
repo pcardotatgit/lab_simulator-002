@@ -1,4 +1,5 @@
-# Lab Simulator for XDR Endpoint Infection demo ( v_20231223 )
+# Lab Simulator for XDR Endpoint Infection demo 
+( version_20231223 )
 
 This lab simulator is a python flask application that simulate endpoint infection for Cisco XDR Demos.
 
@@ -164,7 +165,7 @@ Ready to go !
 
 ## What to do when the Flask Application is started
 
-The first time ou run the application you must complete the application setup by configuring some initiamisation parameters.
+The first time ou run the application you must complete the application setup by configuring some initialisation parameters.
 
 For doing so, click on the **[Settings]** button in the top menu and enter the correct values for :
 
