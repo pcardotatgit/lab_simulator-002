@@ -196,3 +196,10 @@ Then you can type anything into the room you openned with the bot. You are suppo
 The diagram here under describes the application architecture. This is a Flask Application
 
 ![](assets/img/appli_architecture.png)
+
+## Application flow
+
+the 2 diagrams below describe the Operation flow for detection and alert ( phase 1 ) and response action from webex alert ( phase 2 )
+
+![](assets/img/endpoint_infection.png)
+![](assets/img/response_action.png)
