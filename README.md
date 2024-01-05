@@ -191,3 +191,8 @@ For technical reasons the Webex Bot can't be started automatically when you star
 Then you can check that it is started into the application console thanks to the message : **the message : Websocket Opened**.
 Then you can type anything into the room you openned with the bot. You are suppose to see that the text you send was received by the bot logic into the application console ( the room ID is one of the parameter we see in the console )
 
+## Application Architecture
+
+The diagram here under describes the application architecture. This is a Flask Application
+
+![](assets/img/appli_architecture.png)
