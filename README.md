@@ -199,12 +199,12 @@ The diagram here under describes the application architecture. This is a Flask A
 
 ## Application flow
 
-the 2 diagrams below describe the Operation flow for detection and alert ( phase 1 ) and response action from webex alert ( phase 2 )
+the 2 diagrams below describe the Operation flow
 
-### Phase 1 : detection and alert
+### Phase 1 : Create a incident from detection done by Endpoint Security Solution and Send an alert formular into webex alert room
 
 ![](assets/img/endpoint_infection.png)
 
-### Phase 2 : response action from webex alert
+### Phase 2 : response action from webex alert action
 
 ![](assets/img/response_action.png)
